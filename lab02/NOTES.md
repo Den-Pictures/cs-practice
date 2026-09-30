@@ -10,3 +10,11 @@ Git
 
 GitHub
 
+
+
+git status
+
+git diff
+
+git diff --staged
+
