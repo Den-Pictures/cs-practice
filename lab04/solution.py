@@ -14,8 +14,8 @@ def winner(names, scores):
     return names[best_index]
 
 def ranking(names: list[str], scores: list[float]) -> list[str]:
-    participants = [(names[i], scores[i], i) for i in range(len(names))]
-    participants.sort(key=lambda x: (-x, x))
+    participants = [(names[i], scores[i]) for i in range(len(names))]
+    participants.sort(key=lambda x: -x[1])
     return [name for name, _, _ in participants]
 
 def above_average(names, scores):
