@@ -15,5 +15,9 @@ for i in range(kol):
             maximum = n
         if n > threshold:
             k += 1
-
+print(kol)
+print(kerror)
+print(f"{k}")
+print(f"{maximum:.1f}")
+print(f"{(sum(values)/len(values)):.1f}")
 
