@@ -6,7 +6,7 @@ def main():
         rows = read_rows(table)
         
     count = count_types(rows)
-    print(len(rows))Я
+    print(len(rows))
     print(len(count))
     print(total_minutes(rows, "ошибка"))
 
