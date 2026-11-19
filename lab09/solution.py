@@ -25,7 +25,7 @@ def change_vector(values: list[float]) -> list[float]:
 # Всё, что больше limit, обрезается до самого limit.
 def cap_above(values: list[float], limit: float) -> list[float]:
     arr = np.asarray(values, dtype=float).copy()
-    arr[arr > limit] = limit  # маска: заменяем сразу все элементы выше предела
+    arr[arr > limit] = limit  # маска: заменяем сразу все элементы выше предела на предельное значение
     return arr.tolist()
 
 # Перевод температур из Цельсия в Фаренгейты по формуле F = C * 9/5 + 32
